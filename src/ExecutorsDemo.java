@@ -56,7 +56,7 @@ public class ExecutorsDemo {
                 System.out.println("all tasks are completed successfully");
             } else {
                 System.out.println("timeout! forcing shutdown");
-                executor.shutdown(); // force stop if shutdown
+                executor.shutdownNow(); // force stop if shutdown
             }
         }catch (InterruptedException e){
             executor.shutdown();
